@@ -176,7 +176,6 @@ public class Dependency {
     @Inject Lazy<HotspotController> mHotspotController;
     @Inject Lazy<QSImpl> mQSImpl;
     @Inject Lazy<ScrimController> mScrimController;
-    @Inject Lazy<NotificationListener> mNotificationListener;
 
     @Inject
     public Dependency() {
