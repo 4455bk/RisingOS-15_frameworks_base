@@ -29,7 +29,8 @@
     <ImageSwitcher android:id="@+id/lyric_icon"
         android:layout_width="@dimen/status_bar_icon_size"
         android:layout_height="@dimen/status_bar_icon_size"
-        android:layout_marginEnd="@dimen/lyric_icon_margin_end">
+        android:layout_marginEnd="@dimen/lyric_icon_margin_end"
+        android:layout_marginBottom="@dimen/lyric_icon_margin_bottom">
         <ImageView
             android:layout_width="@dimen/status_bar_icon_size"
             android:layout_height="@dimen/status_bar_icon_size"
