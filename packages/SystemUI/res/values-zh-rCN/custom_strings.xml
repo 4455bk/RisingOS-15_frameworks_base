@@ -15,6 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <string name="no_media_playing">无媒体播放</string>
 
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
     <plurals name="quick_settings_internet_hotspot_summary_num_devices">
@@ -70,4 +72,89 @@
     <string name="usage_data">今日使用</string>
     <string name="usage_data_default_suffix">数据</string>
     <string name="usage_wifi_default_suffix">Wi-Fi</string>
+    
+    <!-- Sound QS Tile -->
+    <string name="quick_settings_sound_label">声音</string>
+    <string name="quick_settings_sound_ring">铃声</string>
+    <string name="quick_settings_sound_vibrate">振动</string>
+    <string name="quick_settings_sound_mute">静音</string>
+    
+    <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">切换流量数据卡片</string>
+    
+    <!-- Music QS Tile -->
+    <string name="quick_settings_music_label">音乐</string>
+    <string name="quick_settings_music_unavailable">不可用</string>
+    
+    <!-- Statusbar Icons -->
+    <string name="status_bar_nfc">NFC</string>
+    <string name="status_bar_data_saver">流量节省</string>
+    <string name="status_bar_call_strength">通话强度</string>
+
+    <!-- Refresh Rate Tile -->
+    <string name="refresh_rate_tile_label">刷新率</string>
+    <string name="auto_mode_label">自动</string>
+    
+    <!-- Button to restart SystemUI, within the Restart Options dialog -->
+    <string name="global_action_restart_systemui">SystemUI</string>
+
+    <!-- Weather Tile -->
+    <string name="omnijaws_service_error">加载天气数据错误</string>
+    <string name="omnijaws_service_unknown">无天气数据</string>
+    <string name="omnijaws_label_default">天气</string>
+
+    <!-- Sleep Mode -->
+    <string name="quick_settings_sleep_mode_label">睡眠模式</string>
+    
+    <!-- Volume Tile -->
+    <string name="quick_settings_volume_tile_label">音量</string>
+    <string name="quick_settings_volume_tile_muted">静音</string>
+    <string name="quick_settings_volume_tile_low">低</string>
+    <string name="quick_settings_volume_tile_high">高</string>
+    
+    <!-- Now bar -->
+    <string name="nowbar_no_media">无媒体播放</string>
+    <string name="nowbar_unknown_title">未知标题</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Dash 闪充 (<xliff:g id="charging_time_left" example="4 小时 2 分钟">%1$s</xliff:g> 后充满)</string>
+    <string name="keyguard_plugged_in_dash_charging"><xliff:g id="percentage">%s</xliff:g> • Dash 闪充</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging with a warp charger. Should match keyguard_plugged_in_warp_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_warp_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Warp 闪充 (<xliff:g id="charging_time_left" example="4 小时 2 分钟">%1$s</xliff:g> 后充满)</string>
+    <string name="keyguard_plugged_in_warp_charging"><xliff:g id="percentage">%s</xliff:g> • Warp 闪充</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging with a VOOC charger. Should match keyguard_plugged_in_vooc_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_vooc_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • VOOC 闪充 (<xliff:g id="charging_time_left" example="4 小时 2 分钟">%1$s</xliff:g> 后充满)</string>
+    <string name="keyguard_plugged_in_vooc_charging"><xliff:g id="percentage">%s</xliff:g> • VOOC Charging</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging with a turbo power charger. Should match keyguard_plugged_in_turbo_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_turbo_power_time"><xliff:g id="percentage">%2$s</xliff:g> • Turbo 闪充 (<xliff:g id="charging_time_left" example="4 小时 2 分钟">%1$s</xliff:g> 后充满)</string>
+    <string name="keyguard_plugged_in_turbo_charging"><xliff:g id="percentage">%s</xliff:g> • Turbo 闪充</string>
+
+    <!-- Alert slide extras -->
+    <string name="volume_ringer_priority_only">仅限优先</string>
+    <string name="volume_ringer_alarms_only">仅限闹钟</string>
+    <string name="volume_ringer_dnd">勿扰</string>
+    <string name="tristate_flashlight">手电筒</string>
+    <string name="tristate_flashlight_on">手电筒开启</string>
+    <string name="tristate_flashlight_off">手电筒关闭</string>
+    <string name="tristate_flashlight_blink">手电筒闪烁</string>
+    <string name="tristate_brightness_bright">最大亮度</string>
+    <string name="tristate_brightness_dark">最小亮度</string>
+    <string name="tristate_brightness_auto">自动亮度</string>
+    <string name="tristate_rotation_auto">自动旋转</string>
+    <string name="tristate_rotation_0">纵向</string>
+    <string name="tristate_rotation_90">横向 (90°)</string>
+    <string name="tristate_rotation_270">横向 (270°)</string>
+
+    <!-- Island notification -->
+    <string name="now_playing_on">%1$s 正在播放</string>
+    <string name="by_artist">%1$s by %2$s</string>
+
+    <!-- Volume panel QS tile -->
+    <string name="quick_settings_volume_panel_label">音量面板</string>
+
+    <!-- 5G toggle in Internet Dialog -->
+    <string name="enable_fiveg">启用 5G</string>
 </resources>
