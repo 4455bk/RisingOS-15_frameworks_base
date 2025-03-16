@@ -114,8 +114,6 @@ public class HeadsUpAppearanceController extends ViewController<HeadsUpStatusBar
     private final FeatureFlagsClassic mFeatureFlags;
     private final HeadsUpNotificationIconInteractor mHeadsUpNotificationIconInteractor;
 
-    private LyricViewController mLyricViewController;
-
     @VisibleForTesting
     @Inject
     public HeadsUpAppearanceController(
@@ -251,10 +249,6 @@ public class HeadsUpAppearanceController extends ViewController<HeadsUpStatusBar
         }
     }
 
-    public void setLyricViewController(LyricViewController controller) {
-        mLyricViewController = controller;
-    }
-
     private void setShown(boolean isShown) {
         if (mShown != isShown) {
             View clockView = mClockController.getClock();
@@ -271,9 +265,6 @@ public class HeadsUpAppearanceController extends ViewController<HeadsUpStatusBar
                 mOperatorNameViewOptional.ifPresent(view -> hide(view, View.INVISIBLE));
                 if (mLeftLogo.getVisibility() != View.GONE)
                     mLeftLogo.setVisibility(View.INVISIBLE);
-                if (mLyricViewController != null) {
-                    mLyricViewController.hideLyricView(mAnimationsEnabled);
-                }
             } else {
                 if (mLeftLogo.getVisibility() != View.GONE)
                     mLeftLogo.setVisibility(View.VISIBLE);
@@ -284,9 +275,6 @@ public class HeadsUpAppearanceController extends ViewController<HeadsUpStatusBar
                 hide(mView, View.GONE, () -> {
                     updateParentClipping(true /* shouldClip */);
                 });
-                if (mLyricViewController != null) {
-                    mLyricViewController.showLyricView(mAnimationsEnabled);
-                }
             }
             // Show the status bar icons when the view gets shown / hidden
             if (mStatusBarStateController.getState() != StatusBarState.SHADE) {
